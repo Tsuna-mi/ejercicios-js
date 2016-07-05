@@ -2,10 +2,10 @@
 //several numbers (can be 2 or 10 or whatever) returns the result of 
 //the operation applied to the values passed as parameters
 
-function calculator(operation, a, b, c, d, e, f, g, h, i, j){
+function calculator(){
 	var result = arguments[1];
 	
-	switch (operation){
+	switch (arguments[0]){
 		case 'suma':
 			for (var i = 2; i < arguments.length;i++){				
 				result += arguments[i];
