@@ -3,11 +3,13 @@
 //this code
 
 function getRGB( colorHEX ){
-	var sColor = colorHEX.toString();
-	var red = parseInt(Number(sColor.slice(1,3)),10);
-	var green = parseInt(Number(sColor.slice(3,5)),10);
-	var blue = parseInt(Number(sColor.slice(5,7)),10);
+	var red = parseInt(Number(colorHEX.slice(1,3)),10);
+	var green = parseInt(Number(colorHEX.slice(3,5)),10);
+	var blue = parseInt(Number(colorHEX.slice(5,7)),10);
 
 	var colorRGB = "rgb(" + red + "," + green + "," + blue + ")"; 
 	return colorRGB;	
 }
+
+// Es mejor subdividir el código para ser más claro y que se lea más fácilmente.
+// Crear cuantas variables se necesite.
